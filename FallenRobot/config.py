@@ -1,38 +1,28 @@
+import os
+
+
 class Config(object):
     LOGGER = True
 
-    # Get this value from my.telegram.org/apps
-    API_ID = 33686933
-    API_HASH = "ce2ed30620c2070104d2ceca6577e4c7"
-
-    CASH_API_KEY = ""  # Get this value for currency converter from https://www.alphavantage.co/support/#api-key
-
-    DATABASE_URL = "postgresql://fallenrobot_db_user:VihPl6MF2vFHwhfUf0lswvsnzea5PM6p@dpg-db3rsj2jnfac738i55d0-a:5432/fallenrobot_db"
-
-    EVENT_LOGS = ()  # Event logs channel to note down important bot level events
-
-    MONGO_DB_URI = "mongodb+srv://admin:Admin12345@cluster0.tav7z8i.mongodb.net/?appName=Cluster0"
-
-    # Telegraph link of the image which will be shown at start command.
+    API_ID = int(os.environ.get("API_ID", 0))
+    API_HASH = os.environ.get("API_HASH", "")
+    CASH_API_KEY = ""
+    DATABASE_URL = os.environ.get("DATABASE_URL", "")
+    EVENT_LOGS = ()
+    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "")
     START_IMG = "https://te.legra.ph/file/40eb1ed850cdea274693e.jpg"
+    SUPPORT_CHAT = ""
+    TOKEN = os.environ.get("TOKEN", "")
+    TIME_API_KEY = ""
+    OWNER_ID = int(os.environ.get("OWNER_ID", 0))
+    LOG_CHANNEL = ""
 
-    SUPPORT_CHAT = ""  # Your Telegram support group chat username
-
-    TOKEN = "8923438206:AAHKlGrGr-62a3sBFCi_ZYzJMrOtXc9Z0FQ"
-
-    TIME_API_KEY = ""  # Get this value from https://timezonedb.com/api
-
-    OWNER_ID = 8941553269  # User id of your telegram account (Must be integer)
-
-    LOG_CHANNEL = ""  # Log channel username
-
-    # Optional fields
-    BL_CHATS = []  # List of groups that you want blacklisted.
-    DRAGONS = []  # User id of sudo users
-    DEV_USERS = []  # User id of dev users
-    DEMONS = []  # User id of support users
-    TIGERS = []  # User id of tiger users
-    WOLVES = []  # User id of whitelist users
+    BL_CHATS = []
+    DRAGONS = []
+    DEV_USERS = []
+    DEMONS = []
+    TIGERS = []
+    WOLVES = []
 
     ALLOW_CHATS = True
     ALLOW_EXCL = True
