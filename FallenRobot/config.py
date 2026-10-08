@@ -7,7 +7,7 @@ class Config(object):
 
     CASH_API_KEY = ""  # Get this value for currency converter from https://www.alphavantage.co/support/#api-key
 
-    DATABASE_URL = "postgresql://fallenrobot_db_user:VihPl6MF2vFHwhfUf0lswvsnzea5PM6p@dpg-db3rsj2jnfac738i55d0-a:5432/fallenrobot_db"  # من Render PostgreSQL
+    DATABASE_URL = "postgresql://fallenrobot_db_user:VihPl6MF2vFHwhfUf0lswvsnzea5PM6p@dpg-db3rsj2jnfac738i55d0-a:5432/fallenrobot_db"
 
     EVENT_LOGS = ()  # Event logs channel to note down important bot level events
 
