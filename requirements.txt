@@ -1,6 +1,7 @@
 aiofiles==24.1.0
 apscheduler==3.6.3
 beautifulsoup4==4.14.2
+bing-image-downloader
 bleach==6.3.0
 bs4==0.0.2
 cachetools==4.2.2
@@ -8,6 +9,7 @@ countryinfo==0.1.2
 emoji==2.15.0
 emoji-country-flag==2.1.0
 Flask==3.0.0
+git+https://github.com/AmarnathCJD/gogram
 gpytranslate==2.0.0
 hachoir==3.3.0
 lxml>=6.0.1
