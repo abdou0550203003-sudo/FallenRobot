@@ -16,13 +16,15 @@ class Config(object):
     # Telegraph link of the image which will be shown at start command.
     START_IMG = "https://te.legra.ph/file/40eb1ed850cdea274693e.jpg"
 
-    SUPPORT_CHAT = "DevilsHeavenMF"  # Your Telegram support group chat username where your users will go and bother you
+    SUPPORT_CHAT = ""  # Your Telegram support group chat username
 
     TOKEN = "8804157165:AAHLoV_cQ3y-Vc1lUexRoH8QDl3bf4s2QX0"
 
     TIME_API_KEY = ""  # Get this value from https://timezonedb.com/api
 
     OWNER_ID = 8941553269  # User id of your telegram account (Must be integer)
+
+    LOG_CHANNEL = ""  # Log channel username (e.g. -1001234567890)
 
     # Optional fields
     BL_CHATS = []  # List of groups that you want blacklisted.
