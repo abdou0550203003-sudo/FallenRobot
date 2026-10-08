@@ -9,7 +9,6 @@ countryinfo==0.1.2
 emoji==2.15.0
 emoji-country-flag==2.1.0
 Flask==3.0.0
-git+https://github.com/AmarnathCJD/gogram
 gpytranslate==2.0.0
 hachoir==3.3.0
 lxml>=6.0.1
