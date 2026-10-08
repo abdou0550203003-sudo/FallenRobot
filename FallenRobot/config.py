@@ -18,13 +18,13 @@ class Config(object):
 
     SUPPORT_CHAT = ""  # Your Telegram support group chat username
 
-    TOKEN = "8804157165:AAHLoV_cQ3y-Vc1lUexRoH8QDl3bf4s2QX0"
+    TOKEN = "8923438206:AAHKlGrGr-62a3sBFCi_ZYzJMrOtXc9Z0FQ"
 
     TIME_API_KEY = ""  # Get this value from https://timezonedb.com/api
 
     OWNER_ID = 8941553269  # User id of your telegram account (Must be integer)
 
-    LOG_CHANNEL = ""  # Log channel username (e.g. -1001234567890)
+    LOG_CHANNEL = ""  # Log channel username
 
     # Optional fields
     BL_CHATS = []  # List of groups that you want blacklisted.
